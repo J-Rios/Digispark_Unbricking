@@ -7,8 +7,8 @@ Instructions:
   3 - Set the bootloader file inside the avr-dude folder
   4 - Open a CMD session inside the avr-dude folder
   5 - Make the connections between the Digispark and the HV programmer
-  6 - Type on CMD one of the following sentences (if you want pin PB5 reset enabled or disabled): 
-		Reset enabled  -> avrdude -c usbasp -p t85 -U flash:w:t85_default.hex:i -U lfuse:w:0xF1:m -U hfuse:w:0xDF:m -U efuse:w:0xFE:m
-		Reset disabled -> avrdude -c usbasp -p t85 -U flash:w:t85_default.hex:i -U lfuse:w:0xF1:m -U hfuse:w:0x5F:m -U efuse:w:0xFE:m
-		
-		Note: usbasp (programmer), t85 (microcontroller), t85_default.hex (Bootloader file name)
+  6 - Type on CMD one of the following sentences (if you want pin PB5 reset enabled or disabled):
+  	Reset enabled  -> avrdude -c usbasp -p t85 -U flash:w:t85_default.hex:i -U lfuse:w:0xF1:m -U hfuse:w:0xDF:m -U efuse:w:0xFE:m
+  	Reset disabled -> avrdude -c usbasp -p t85 -U flash:w:t85_default.hex:i -U lfuse:w:0xF1:m -U hfuse:w:0x5F:m -U efuse:w:0xFE:m
+  	
+  	Note: usbasp (programmer), t85 (microcontroller), t85_default.hex (Bootloader file name)
