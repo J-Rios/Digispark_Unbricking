@@ -17,4 +17,6 @@ Instructions:
     - Note: usbasp (programmer), t85 (microcontroller), t85_default.hex (Bootloader file name)
     
     
- For ArduinoISP programmer: avrdude -c arduino -P com25 -p t85 -U flash:w:t85_default.hex:i ...
+Others:
+  * For ArduinoISP programmer: avrdude -c arduino -P COM25 -p t85 -U flash:w:t85_default.hex:i ...
+  * Backup internal firmware: avrdude -C avrdude.conf -c usbasp -p t85 -U flash:r:dumped_firmware.bin:r 
