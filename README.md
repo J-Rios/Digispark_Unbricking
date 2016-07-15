@@ -16,4 +16,5 @@ Instructions:
 
     - Note: usbasp (programmer), t85 (microcontroller), t85_default.hex (Bootloader file name)
     
-For ArduinoISP upload: avrdude -c arduino -P com25 -p t85 -U flash:w:t85_default.hex:i ...
+    
+ For ArduinoISP programmer: avrdude -c arduino -P com25 -p t85 -U flash:w:t85_default.hex:i ...
