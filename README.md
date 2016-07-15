@@ -15,3 +15,5 @@ Instructions:
     - Reset disabled: avrdude -c usbasp -p t85 -U flash:w:t85_default.hex:i -U lfuse:w:0xF1:m -U hfuse:w:0x5F:m -U efuse:w:0xFE:m
 
     - Note: usbasp (programmer), t85 (microcontroller), t85_default.hex (Bootloader file name)
+    
+For ArduinoISP upload: avrdude -c arduino -P com25 -p t85 -U flash:w:t85_default.hex:i ...
